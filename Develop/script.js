@@ -1,6 +1,9 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+// Function to generate a random password
+function generatePassword() {
+
 // Define character sets for password generator
 const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
 const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -34,7 +37,7 @@ if (confirm('Include special characters?')) {
 // Logic to validate user input
 if (allChars === '') {
   alert('Please select at least one character type.');
-  return '';
+return " ";
 }
 
   // Generate the password
@@ -46,6 +49,7 @@ if (allChars === '') {
 
   return generatedPassword;
 
+}
 
 // Write password to the #password input
 function writePassword() {
